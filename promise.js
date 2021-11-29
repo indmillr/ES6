@@ -7,3 +7,8 @@ const makeServerRequest = new Promise((resolve, reject) => {
     reject("Data not received");
   }
 });
+
+// handle fulfilled promise with 'then'
+makeServerRequest.then((result) => {
+  console.log(result);
+});
