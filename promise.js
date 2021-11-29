@@ -12,3 +12,8 @@ const makeServerRequest = new Promise((resolve, reject) => {
 makeServerRequest.then((result) => {
   console.log(result);
 });
+
+// handle rejected promise with 'catch'
+makeServerRequest.catch((error) => {
+  console.log(error);
+});
